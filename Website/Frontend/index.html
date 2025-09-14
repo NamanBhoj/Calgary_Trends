@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calgary StoryMap Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="p-4 bg-blue-700 text-white text-xl font-bold">
+    Calgary Demographics StoryMap
+  </header>
+
+  <main class="p-6">
+    <div class="mb-4 text-gray-700">
+      This map shows demographic insights from the 2021 Census, joined with Calgary’s community boundaries.
+    </div>
+
+    <!-- Embed StoryMap -->
+    <arcgis-embedded-map style="height:1200px;width:1200px;" item-id="413568ccd258440b9ada98b49c81806b" theme="dark" bookmarks-enabled heading-enabled legend-enabled information-enabled center="-114.10022456913872,51.081410622330296"scale="144447.638572" portal-url="https://www.arcgis.com" ></arcgis-embedded-map>
+  </main>
+
+  <!-- UserWay Widget -->
+  <!-- <script src="https://cdn.userway.org/widget.js" data-account="YOUR-ACCOUNT-ID"></script> -->
+</body>
+</html>
